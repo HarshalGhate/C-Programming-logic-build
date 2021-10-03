@@ -15,6 +15,11 @@ void Pattern(int iRow,int iCol)
 {
     int i=0,j=0;
     char ch='A';
+    if((iRow<0)||(iCol<0))      //Filter
+    {
+        iRow=-iRow;
+        iCol=-iCol;
+    }
     for(i=1;i<=iRow;i++)
     {
         for ( j =1,ch='A'; j <=iCol; j++,ch++)
