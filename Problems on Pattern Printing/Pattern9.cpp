@@ -16,7 +16,11 @@ using namespace std;
 void Pattern(int iRow,int iCol)
 {
     int i=0,j=0;
-    
+    if((iRow<0)||(iCol<0))      //Filter
+    {
+        iRow=-iRow;
+        iCol=-iCol;
+    }
     for(i=iRow;i>0;i--)
     {
         for ( j =1; j <=iCol; j++)
